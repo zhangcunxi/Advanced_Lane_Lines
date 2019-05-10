@@ -16,7 +16,7 @@ So, I create this show video function, made this project run like realtime worke
 
 
 
-![image](./test_images/ShowTwoWindow.png)
+![image](./readme_image/ShowTwoWindow.png)
 
 
 ---
