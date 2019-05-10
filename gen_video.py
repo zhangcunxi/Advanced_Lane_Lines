@@ -77,7 +77,7 @@ if __name__ == "__main__":
 	# get_image("./test_video/harder_challenge_video.mp4", "./test_images/harder/", [i for i in range(1,47)])
 
 	gen_video_tracker("project_video.mp4", subclip=False, debug_window=True)
-	ShowVideo('./output_video/temp/project_video.mp4', './test_video/project_video.mp4', delaytime = 15)
+	ShowVideo('./output_video/temp/project_video.mp4', './test_video/project_video.mp4', delaytime = 10)
 
 	#gen_video_tracker("project_video.mp4", subclip=False, debug_window=True)
 	

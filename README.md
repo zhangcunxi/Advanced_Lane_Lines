@@ -3,18 +3,26 @@
 Note: this is Udacity Nano Degree project, please refer to [Udacity Repository](https://github.com/udacity/CarND-Advanced-Lane-Lines.git) for the project information and requirements.
 
 ## Install OpenCV4 on my mac
-You can follow [this link](https://www.pyimagesearch.com/2016/12/05/macos-install-opencv-3-and-python-3-5/) to install newest OpenCV+Python3
+We should be careful when we install OpenCV, You can follow this [link](https://www.pyimagesearch.com/2016/12/05/macos-install-opencv-3-and-python-3-5/) to install newest OpenCV+Python3
 
-I also use the Python virtual environments to as the documents recomanded.
+I also use the Python virtual environments as the document's recommendation
+.
 
 ## Show the original video and output video in the same time 
 In this project, the video will processed by the pipeline(), and the output video will storage in output folder.
-This will not cool if some one look at you, you need to use your  video player and find the location where the videos, and play it. So, I create this show video function, made this project run like realtime worked. You can use **ShowVideoFunction.py** deretcly to show the project_video + output_video at the same time. You can also use this function in the **gen_video.py** which I have already updated.
+This will not cool if some one look at you, you need to use your  video player and find the location where the videos, and play it. 
+
+So, I create this show video function, made this project run like realtime worked. You can deretcly use `ShowVideoFunction.py`  to show the project_video + output_video at the same time. You can also use this function in the `gen_video.py` which I have already updated. 
+
 
 
 ![image](./test_images/ShowTwoWindow.png)
 
-## As below is the original Readme
+
+---
+
+---
+# As below is the original Readme
 
 **Advanced Lane Finding Project**
 
