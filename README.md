@@ -2,6 +2,8 @@
 # Lane_Detection with Macbook air
 Note: this is Udacity Nano Degree project, please refer to [Udacity Repository](https://github.com/udacity/CarND-Advanced-Lane-Lines.git) for the project information and requirements.
 
+And this project cloned from [Here](https://github.com/ChengZhongShen/Advanced_Lane_Lines)
+
 ## Install OpenCV4 on my mac
 We should be careful when we install OpenCV, You can follow this [link](https://www.pyimagesearch.com/2016/12/05/macos-install-opencv-3-and-python-3-5/) to install newest OpenCV+Python3
 

@@ -1,5 +1,8 @@
 # 在macbook air 上实现 无人驾驶-车道检测
 注: 这是Udacity Nano Degree project, 关于项目信息和要求请参考 [Udacity Repository](https://github.com/udacity/CarND-Advanced-Lane-Lines)
+
+这个项目是从 [这里](https://github.com/ChengZhongShen/Advanced_Lane_Lines) 克隆过来的
+
 ## 安装OpenCV
 首先需要在mac上安装opencv，这个过程并不是很简单，需要下载之后在本地编译，需要一些以来环境，整个搭建还是需要一些耐心细心，大家可以根据这个[帖子]()搭建环境,这个老外写的非常详细，一些常见的问题，在下面的留言里也都进行了解答。
 
