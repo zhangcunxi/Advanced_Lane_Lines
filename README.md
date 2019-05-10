@@ -1,4 +1,21 @@
 
+# Lane_Detection with Macbook air
+Note: this is Udacity Nano Degree project, please refer to [Udacity Repository](https://github.com/udacity/CarND-Advanced-Lane-Lines.git) for the project information and requirements.
+
+## Install OpenCV4 on my mac
+You can follow [this link](https://www.pyimagesearch.com/2016/12/05/macos-install-opencv-3-and-python-3-5/) to install newest OpenCV+Python3
+
+I also use the Python virtual environments to as the documents recomanded.
+
+## Show the original video and output video in the same time 
+In this project, the video will processed by the pipeline(), and the output video will storage in output folder.
+This will not cool if some one look at you, you need to use your  video player and find the location where the videos, and play it. So, I create this show video function, made this project run like realtime worked. You can use **ShowVideoFunction.py** deretcly to show the project_video + output_video at the same time. You can also use this function in the **gen_video.py** which I have already updated.
+
+
+![image](./test_images/ShowTwoWindow.png)
+
+## As below is the original Readme
+
 **Advanced Lane Finding Project**
 
 Note: this is Udacity Nano Degree project, please refer to [Udacity Repository](https://github.com/udacity/CarND-Advanced-Lane-Lines.git) for the project information and requirements.
@@ -36,7 +53,7 @@ To test if the pickle file which contain the 'mtx' and 'dist' work. use the `tes
 * use `cv2.undistort()` to undistort the test image.
 the result as below 
 
-![undistort_image](./camera_cal/undistort_example.png)
+![image](./camera_cal/undistort_example.png)
 
 ---
 
@@ -49,7 +66,7 @@ The process described below:
 #### 1. distortion-corrected image.
 
 use the paremeter from pickle file *camera_cal.p* (this is done by the function: `get_camera_cal()`) use the `cv2.undistort` to get the undistort image,the image showed below(resized to 640X360 to fit the file.):
-![undistort_image](./examples/test6_resize.jpg)
+![image](./examples/test6_resize.jpg)
 
 #### 2. Threshold the image.
 
@@ -64,7 +81,7 @@ This is a combination of color and gradient thresholds to generate a binary imag
 in color: it use a HLS's s channel, for gradient, use x direction gradient. 
 the detialed code is in the `image_process.py`, function `color_grid_thresh`, after apply the threshold, the image as below.
 
-![alt text](./examples/test6_threshed_resize.jpg)
+![image](./examples/test6_threshed_resize.jpg)
 
 
 #### 3. Perspective transform
@@ -88,11 +105,11 @@ dst = np.float32(
     [(img_size[0] * 3 / 4), img_size[1]],
     [(img_size[0] * 3 / 4), 0]])	
 ```
-![alt text](./helper/view_tran.png)
+![image](./helper/view_tran.png)
 
 The wraped binary image as below
 
-![warpped_binary](./examples/test6_threshed_wraped_resize.jpg)
+![image](./examples/test6_threshed_wraped_resize.jpg)
 
 
 #### 4. Lane-line pixels detection and fit their positions with a polynomial
@@ -107,7 +124,7 @@ after get the lane_pixels, use `np.polyfit()` to get polynomial paratmeters, thi
 
 To visualize the search result and fit polynomial, use `fit_polynomial()` function. the visualized result as below. show the search window/lane pixels/fit polynimial.
 
-![alt text](./examples/test6_searched.png)
+![image](./examples/test6_searched.png)
 
 #### 5. Calculate the radius of curvature of the lane and the position of the vehicle with respect to center.
 
@@ -148,7 +165,7 @@ def project_fit_lane_info(self, image, color=(0,255,255)):
 
 The result as below picture.
 
-![alt text](./examples/test6_lane_projected.png)
+![image](./examples/test6_lane_projected.png)
 
 In the pipeline.py, you could go to line 487 to 498, choice test on one image or a batch of image to see how the pipeline work.
 ```python
@@ -201,7 +218,7 @@ With the image process established on single image. We couldn't get the left/rig
 there is always noise which will affect the lane detection.
 
 For example, in some frame, the lan detection failed, as below picuture shows
-![detect fail](./examples/project_detect_fail_resize.png)
+![image](./examples/project_detect_fail_resize.png)
 
 The full size picture is [link to full size picture](./examples/project_detect_fail.png)
 

@@ -50,7 +50,7 @@ def ShowVideo(dist1,dist2,delaytime = 100):
         # use Q key to exit
         if (cv2.waitKey(10) & 0xFF) == ord('q'):
             break
-        cv2.waitKey(delaytime)
+
     cap1.release()
     cap2.release()
     cv2.destroyAllWindows()
@@ -59,11 +59,11 @@ def main():
     print('this message is from main function')
     dist1 = './challenge_video_with_debug_window.mp4'
     dist2 = './challenge_video.mp4'
-    delaytime = 10
+    delaytime = 100
 
     #ShowVideo(dist1,dist2,delaytime)
     #ShowVideo(dist1,dist2)
-    ShowVideo('./output_video/temp/project_video.mp4', './test_video/project_video.mp4', delaytime = 15)
+    ShowVideo('./output_video/temp/project_video.mp4', './test_video/project_video.mp4', delaytime = delaytime)
     #ShowVideo('./output_video/temp/challenge_video.mp4', './test_video/challenge_video.mp4', delaytime = 15)
     #ShowVideo('./output_video/temp/harder_challenge_video.mp4', './test_video/harder_challenge_video.mp4', delaytime = 15)
 
