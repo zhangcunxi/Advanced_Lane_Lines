@@ -59,7 +59,7 @@ def main():
     print('this message is from main function')
     dist1 = './challenge_video_with_debug_window.mp4'
     dist2 = './challenge_video.mp4'
-    delaytime = 100
+    delaytime = 1
 
     #ShowVideo(dist1,dist2,delaytime)
     #ShowVideo(dist1,dist2)
